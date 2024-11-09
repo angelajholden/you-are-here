@@ -20,6 +20,20 @@ body {
 	background-color: #3c6382;
 	color: #fff;
 }
+.access-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
 
 p {
 	color: #fff;
@@ -56,6 +70,41 @@ a:focus {
 	text-align: center;
 }
 
+.image-section {
+	width: 100%;
+}
+
+.image-container {
+	margin: 0 0 2rem;
+	width: 50%;
+}
+
+.form {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-section input {
+	appearance: none;
+	border-radius: 0;
+	border: 1px solid #222;
+	padding: 0.65rem;
+}
+
+.submit {
+	appearance: none;
+	border: 1px solid #222;
+	background-color: #fff;
+}
+
+.submit .ionicon {
+	display: block;
+	width: 35px;
+	height: 35px;
+}
+
 .navigation,
 .main,
 .footer {
@@ -63,7 +112,7 @@ a:focus {
 	margin: 0 auto;
 	padding: 1rem;
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: space-between;
 }
 
